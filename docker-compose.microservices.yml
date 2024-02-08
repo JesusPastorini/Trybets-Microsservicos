@@ -1,0 +1,31 @@
+version: '3'
+services:
+  db:
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    container_name: trybets_db
+    ports:
+        - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=TryBets123456!
+      - MSSQL_PID=Developer
+  trybets.matches:
+    container_name: trybets.matches
+    build: ./src/TryBets.Matches
+    ports:
+      - 5502:5502
+  trybets.users:
+    container_name: trybets.users
+    build: ./src/TryBets.Users
+    ports:
+      - 5501:5501
+  trybets.bets:
+    container_name: trybets.bets
+    build: ./src/TryBets.Bets
+    ports:
+      - 5503:5503
+  trybets.odds:
+    container_name: trybets.odds
+    build: ./src/TryBets.Odds
+    ports:
+      - 5504:5504
