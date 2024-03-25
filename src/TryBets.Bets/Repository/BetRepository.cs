@@ -98,7 +98,7 @@ public class BetRepository : IBetRepository
         var bet = _context.Bets
             .Include(b => b.Team)
             .Include(b => b.Match)
-            .FirstOrDefault(b => b.BetId == betId && b.UserId == user.UserId);
+            .FirstOrDefault(b => b.BetId == BetId && b.UserId == user.UserId);
 
         if (bet == null)
         {
