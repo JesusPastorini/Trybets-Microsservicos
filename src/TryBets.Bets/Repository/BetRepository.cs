@@ -19,21 +19,21 @@ public class BetRepository : IBetRepository
         var user = _context.Users.FirstOrDefault(u => u.Email == email);
         if (user == null)
         {
-            throw new Exception("User not found");
+            throw new Exception("User not founded");
         }
 
         // Encontrar partida
         var match = _context.Matches.FirstOrDefault(m => m.MatchId == betRequest.MatchId);
         if (match == null)
         {
-            throw new Exception("Match not found");
+            throw new Exception("Match not founded");
         }
 
         // Encontrar equipe
         var team = _context.Teams.FirstOrDefault(t => t.TeamId == betRequest.TeamId);
         if (team == null)
         {
-            throw new Exception("Team not found");
+            throw new Exception("Team not founded");
         }
 
         // Verificar se a partida está finalizada
@@ -91,7 +91,7 @@ public class BetRepository : IBetRepository
         var user = _context.Users.FirstOrDefault(u => u.Email == email);
         if (user == null)
         {
-            throw new Exception("User not found");
+            throw new Exception("User not founded");
         }
 
         // Encontrar aposta
@@ -102,7 +102,7 @@ public class BetRepository : IBetRepository
 
         if (bet == null)
         {
-            throw new Exception("Bet not found");
+            throw new Exception("Bet not founded");
         }
 
         // Verificar se o usuário tem permissão para ver esta aposta
