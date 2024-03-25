@@ -25,7 +25,7 @@ namespace TryBets.Users.Services
             var key = Encoding.ASCII.GetBytes(_tokenOptions.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = AddClaims(user),
+                Subject = new ClaimsIdentity(),
                 Expires = System.DateTime.UtcNow.AddDays(_tokenOptions.ExpiresDay),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
