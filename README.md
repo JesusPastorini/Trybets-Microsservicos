@@ -1,10 +1,52 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# TryBets
+
+![TryBets Logo](link_para_o_seu_logo.png)
+
+Bem-vindo ao TryBets, um projeto desenvolvido como parte do curso de desenvolvimento web da Trybe. Este projeto consiste em um backend para um site de apostas esportivas, onde os usuários podem se cadastrar, fazer login, visualizar times e partidas, realizar apostas e muito mais.
+
+## Tecnologias Utilizadas
+
+- ASP.NET Core
+- Docker
+- SQL Server
+- Entity Framework Core
+- Swagger
+
+## Funcionalidades
+
+- Cadastro de usuários
+- Login de usuários
+- Visualização de times e partidas
+- Realização de apostas
+- Atualização dinâmica das odds das partidas
+- E muito mais!
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+
+- Docker instalado
+- .NET SDK instalado
+
+### Instruções
+
+## 🤝 Contribuição 🤝
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/trybets.git
+
+Navegue até o diretório do projeto:
+```bash
+cd trybets
+Execute o comando para iniciar o aplicativo:
+```bash
+docker-compose up -d --build
+Acesse o Swagger para interagir com a API:
+```bash
+http://localhost:5500/swagger/index.html
+
+## 📝 Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
