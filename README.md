@@ -39,13 +39,12 @@ Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue
 git clone https://github.com/seu-usuario/trybets.git
 
 Navegue até o diretório do projeto:
-```bash
 cd trybets
+
 Execute o comando para iniciar o aplicativo:
-```bash
 docker-compose up -d --build
+
 Acesse o Swagger para interagir com a API:
-```bash
 http://localhost:5500/swagger/index.html
 
 ## 📝 Licença
