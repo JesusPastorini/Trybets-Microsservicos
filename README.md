@@ -1,6 +1,6 @@
 # TryBets
 
-![TryBets Logo](link_para_o_seu_logo.png)
+![TryBets Logo](img/trybets-der.png)
 
 Bem-vindo ao TryBets, um projeto desenvolvido como parte do curso de desenvolvimento web da Trybe. Este projeto consiste em um backend para um site de apostas esportivas, onde os usuários podem se cadastrar, fazer login, visualizar times e partidas, realizar apostas e muito mais.
 
